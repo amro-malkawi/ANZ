@@ -16,5 +16,7 @@ Enter root/root and hit "sign in".
 
 Once logged in select csv file to upload . 
 After hitting Upload you will be directed to page that show you the results.
+![alt text](https://github.com/amro-malkawi/ANZ/blob/main/2.png?raw=true)
+![alt text](https://github.com/amro-malkawi/ANZ/blob/main/3.png?raw=true)
 
 
