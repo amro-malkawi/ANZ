@@ -10,6 +10,7 @@ Navigate to target folder.
 In Terminal run: java -jar credit-0.0.1-SNAPSHOT.jar
 
 Then open browser and hit localjost:8080 to show login page.
+![alt text](https://github.com/amro-malkawi/ANZ/blob/main/login.png?raw=true)
 
 Enter root/root and hit "sign in".
 
