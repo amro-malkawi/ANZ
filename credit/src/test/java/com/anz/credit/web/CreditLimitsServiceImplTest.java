@@ -36,11 +36,13 @@ class CreditLimitsServiceImplTest {
     public void whenLinesAreAnzSample_thenReturnAnzReportSample() {
         List<List<String>> lines=getDummyLines();
         String report=creditLimitsService.getReport(lines);
-        System.out.println(report);
+       
         String expextedResult1="Entities: E/F/: </br>  Limit breach at E (limit = 200, direct utilisation = 150, combined utilisation = 230).</br></br>Entities: A/B/C/D/:</br>  No limit breaches </br></br>";
         String expextedResult2="Entities: E/F/: </br>  Limit breach at E (limit = 200, direct utilisation = 150, combined utilisation = 230).</br></br>Entities: A/B/D/C/:</br>  No limit breaches </br></br>";
+        String expextedResult3="Entities: A/B/C/D/:</br>  No limit breaches </br></br></br>Entities: E/F/: </br>  Limit breach at E (limit = 200, direct utilisation = 150, combined utilisation = 230).</br>";
+        String expextedResult4="Entities: A/B/D/C/:</br>  No limit breaches </br></br></br>Entities: E/F/: </br>  Limit breach at E (limit = 200, direct utilisation = 150, combined utilisation = 230).</br>";
 
-        assertThat(report, anyOf(is(expextedResult1), is(expextedResult2)));
+        assertThat(report, anyOf(is(expextedResult1), is(expextedResult2),is(expextedResult3),is(expextedResult4)));
     }
 
     private List<List<String>> getDummyLines() {
